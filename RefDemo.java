@@ -1,18 +1,12 @@
-public class RefDemo {
-    public static void main(String[] args) {
-        // Immutable - Can't change the original
-        // change happens in copy
-        int a= 10;
-        int b = a;
-        b = b + 10;
-        System.out.println(a);
-        System.out.println(b);
-        // Mutable
-        StringBuffer sb = new StringBuffer("Hello");
-        StringBuffer sb2 = sb;
-        sb2.append("Hi Java");
-        System.out.println(sb);
-        System.out.println(sb2);
+import java.util.Date;
 
+// folder = package
+//import java.lang.*; // by default import package
+class RefDemo{
+    public static void main(String[] args) {
+        System.out.println("Hello Java");
+        Date date = new Date();
+        StringBuffer sb = new StringBuffer();
+        System.out.println(date);
     }
 }
