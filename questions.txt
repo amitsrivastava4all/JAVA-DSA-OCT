@@ -1,0 +1,39 @@
+Hint: % and / , pow
+
+Q1. Decimal to Binary Convert
+num = 10 
+Binary - 1010
+
+Q2. Reverse a Number
+num= 123
+Reverse 321
+
+Q3. Rotate a Number
+num=12345
+rotation=2
+O/p - 45123
+
+Q4. Prime Number 1 to N
+
+Q5. Armstrong Number 1 to N
+
+Q6. Number = 76542
+Swap First and Last digit
+O/P 26547
+
+Q7. Own Power Logic create
+2^5  = 32
+Don't use Math.pow
+
+Q8. Fibo Nth
+0 1 1 2 3 5 8 
+
+Q9. Seed Number
+Input : 123, 738
+123 * 1 * 2 * 3 = 738
+
+Q10. Lucky Number
+num = 1623
+Even Position Digits 
+6^2 + 3^2 = 45 
+Divisible by 9 , Lucky Number
