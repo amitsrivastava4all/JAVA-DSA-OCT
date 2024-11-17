@@ -1,0 +1,17 @@
+void fun(int n){
+    // Base case
+    if(n==0){
+        return ;
+    }
+    // Stack Building 
+    // Logic
+    // Recursion 
+    func(n-1); // function calling itself (with small problem)
+    // Stack Fall
+    // Logic
+}
+
+// Recursion
+// Base Case or Termination Case (1 Time)
+// Small Problem with Recursive Call (N Time)
+// Logic (Pre/Post)

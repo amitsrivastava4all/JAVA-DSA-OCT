@@ -1,19 +1,31 @@
-class Second{
+class First {
     /*
-        main () - entry point of every java program
-     * void - keyword - nothing to return 
-     * static (keyword) - things load with class, static things will be load when class is loaded.
-     * public (keyword) - things access outside the package (folder)
-     * String args[] - Command line arguments
-     * String - predefine class , String - collection of chars
-     * args - name of argument , it can be anything , arguments - number of arguments can be N []
+     * show - function name
+     * how function identifiy functionname()
+     * 
+     * static - keyword , load thing when class is loaded.
      */
-    static public  void main(String ...a){
-        /*
-         * System - predefine class
-         * out - object - PrintStream
-         * println () - method of a PrintStream class
-         */
-        System.out.println("Hello World");
+    static void show(int num) { // function start
+        // for (int i = 1; i <= 5; i++) {
+        // System.out.println("Hello Amit");
+        // }
+        // Termination Case / Base Case
+        if (num == 0) {
+            return; // exit from the function call, and get back to calling point
+        }
+        System.out.println("Hello Amit " + num); // Logic
+        // num - 1 (Small Problem)
+        show(num - 1); // stack build
+        System.out.println("Hello Amit " + num);
+        // Stack Fall Area
+    } // function end
+
+    public static void main(String[] args) {
+        show(5); // static thing load with class so it can call directly or with classname
     }
 }
+
+/*
+ * function - bunch of lines ,
+ * put inside some name, whenever u need it just call it
+ */
