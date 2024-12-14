@@ -1,31 +1,20 @@
 class First {
-    /*
-     * show - function name
-     * how function identifiy functionname()
-     * 
-     * static - keyword , load thing when class is loaded.
-     */
-    static void show(int num) { // function start
-        // for (int i = 1; i <= 5; i++) {
-        // System.out.println("Hello Amit");
-        // }
-        // Termination Case / Base Case
-        if (num == 0) {
-            return; // exit from the function call, and get back to calling point
+    static void factHelper(int f, int result) {
+        // Base case
+        if (f == 1) {
+            System.out.println(result);
+            return;
         }
-        System.out.println("Hello Amit " + num); // Logic
-        // num - 1 (Small Problem)
-        show(num - 1); // stack build
-        System.out.println("Hello Amit " + num);
-        // Stack Fall Area
-    } // function end
+        // Small Problem
+        factHelper(f - 1, result * f);
+    }
+
+    // Factorial
+    static void fact(int f) {
+        factHelper(5, 1);
+    }
 
     public static void main(String[] args) {
-        show(5); // static thing load with class so it can call directly or with classname
+        fact(5);
     }
 }
-
-/*
- * function - bunch of lines ,
- * put inside some name, whenever u need it just call it
- */
