@@ -1,0 +1,27 @@
+class Solution {
+    public List<List<Integer>> permute(int[] nums) {
+        List<Integer> smallList = new ArrayList<>();
+        List<List<Integer>> bigList = new ArrayList<>();
+        helper(nums, smallList, bigList);
+        return bigList;
+    }
+
+    void helper(int []nums, List<Integer> smallList, List<List<Integer>> bigList){
+        // Base case
+        if(nums.length == smallList.size()){
+            bigList.add(new ArrayList(smallList));
+            return ;
+        }
+        // Loop for Traverse all the branches / possiblities
+        for(int i = 0 ; i<nums.length ; i++){
+            if(!smallList.contains(nums[i])){
+            // modify 
+            smallList.add(nums[i]);
+            helper(nums, smallList, bigList);
+            // Fall (BackTracking)
+            smallList.remove(smallList.size()-1);
+            }
+        }
+    }
+
+}
